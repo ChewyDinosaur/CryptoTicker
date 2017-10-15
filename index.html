@@ -5,20 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Crypto Ticker</title>
     <link rel='stylesheet' type='text/css' href='styles.css'>
-    <script src='script.js'></script>
+    <script src='script.js' defer></script>
 </head>
 <body>
     <div class='container'>
+        <div class='title'>CryptoCheck</div>
         <div class='search'>
-            <input type='text' id='coinInput'>
+            <input type='text' placeholder='Search full coin name' id='coinInput'>
             <select id='currency'>
                 <option value='USD'>USD</option>
                 <option value='EUR'>EUR</option>
+                <option value='CAD'>CAD</option>
+                <option value='GBP'>GBP</option>
             </select>
             <button id='button'>Go</button>
         </div>
 
-        <div class='content'></div>
+        <div class='content-container'>
+            <div class='content'></div>
+        </div>
     </div>
 </body>
 </html>
